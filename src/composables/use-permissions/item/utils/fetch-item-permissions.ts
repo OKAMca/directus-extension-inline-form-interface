@@ -1,7 +1,7 @@
 import { useApi } from '@directus/extensions-sdk';
-import { useI18n } from '@/composables/use-i18n';
+import { useI18n } from '../../../../composables/use-i18n';
 import { useStores } from '@directus/extensions-sdk';
-import { unexpectedError } from '@/utils/unexpected-error';
+import { unexpectedError } from '../../../../utils/unexpected-error';
 import { ItemPermissions } from '@directus/types';
 import { computedAsync } from '@vueuse/core';
 import { ref, unref } from 'vue';

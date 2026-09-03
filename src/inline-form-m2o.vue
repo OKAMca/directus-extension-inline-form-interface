@@ -26,12 +26,12 @@
 <script lang="ts" setup>
 import { useApi, useStores } from '@directus/extensions-sdk';
 import { computed, ref, toRefs, watch } from 'vue';
-import { useI18n } from '@/composables/use-i18n';
+import { useI18n } from './composables/use-i18n';
 import { get, isEmpty, isNil } from 'lodash-es';
-import { useRelationM2O } from '@/composables/use-relation-m2o.js';
+import { useRelationM2O } from './composables/use-relation-m2o.js';
 import { getEndpoint } from '@directus/utils';
-import { unexpectedError } from '@/utils/unexpected-error.js';
-import { useItemPermissions } from '@/composables/use-permissions';
+import { unexpectedError } from './utils/unexpected-error.js';
+import { useItemPermissions } from './composables/use-permissions';
 
 interface Props {
 	value?: string | number | Record<string, any> | null;

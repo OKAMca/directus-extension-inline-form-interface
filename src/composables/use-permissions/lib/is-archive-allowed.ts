@@ -1,5 +1,4 @@
-import { useStores } from '@directus/extensions-sdk';
-import { useCollection } from '@directus/composables';
+import { useStores, useCollection } from '@directus/extensions-sdk';
 import { ComputedRef, computed, ref, unref } from 'vue';
 import type { Collection } from '../types';
 import { isFieldAllowed } from '../utils/is-field-allowed';
