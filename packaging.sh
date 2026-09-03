@@ -5,14 +5,16 @@ if [ ! -f "dist/index.js" ]; then
     exit
 fi
 
-if [ ! -d "package/dist" ]; then
-    mkdir -p package/dist
-fi
+#if [ ! -d "package/dist" ]; then
+#    mkdir -p package/dist
+#fi
 
-VERSION=$(node -p "require('./package.json').version")
+#VERSION=$(node -p "require('./package.json').version")
 
-cp LICENSE package.json README.md package/
-cp dist/index.js package/dist/
+#cp LICENSE package.json README.md package/
+#cp dist/index.js package/dist/
 
-tar czvf directus-extension-inline-form-interface-${VERSION}.tgz package
+#tar czvf directus-extension-inline-form-interface-${VERSION}.tgz package
+
+npm pack
 
