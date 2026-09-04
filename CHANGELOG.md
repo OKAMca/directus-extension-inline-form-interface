@@ -1,3 +1,30 @@
+# 1.4.0
+
+### Updates
+
+- Update host from 11.0.0 to 11.17.0
+- Update @directus/extensions-sdk to 17.1.4 (directus 11.17.4), composables, exceptions, types and utils accordingly
+- Update @unhead/vue to 2.1.17
+- Update axios 1.20.0
+- Update eslint to 9.18.0
+- Update lodash
+- Update prettier
+- Update picomatch >= 4.0.4
+- Update typescript to ^6.0.0
+- Getting update from latest version of principal branch
+  - update en.yaml to en.js
+  - update useCollection import
+  - updates @ import and useCollection import
+- Remove pnpm in package.lock
+
+# 1.3.1
+
+### Updates
+
+- Update host from 10.9 to 11.0
+- Remove notice warning
+- Adding fr.yaml
+
 # [1.2.0](https://github.com/hanneskuettner/directus-extension-inline-form-interface/compare/v1.1.0...v1.2.0) (2024-03-07)
 
 

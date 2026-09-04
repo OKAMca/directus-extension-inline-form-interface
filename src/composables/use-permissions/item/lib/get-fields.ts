@@ -1,5 +1,4 @@
-import { useStores } from '@directus/extensions-sdk';
-import { useCollection } from '@directus/composables';
+import { useStores, useCollection } from '@directus/extensions-sdk';
 import { Field, ItemPermissions } from '@directus/types';
 import { cloneDeep } from 'lodash';
 import { Ref, computed, ref, unref } from 'vue';
