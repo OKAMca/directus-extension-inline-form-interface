@@ -34,11 +34,11 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@directus/composables": "^10.1.16",
+    "@directus/composables": "^11.4.1",
     "@directus/exceptions": "^10.0.3",
-    "@directus/extensions-sdk": "^11.0.1",
-    "@directus/types": "^11.2.1",
-    "@directus/utils": "^11.0.6",
+    "@directus/extensions-sdk": "^17.1.4",
+    "@directus/types": "^15.0.3",
+    "@directus/utils": "^13.4.1",
     "@rollup/plugin-alias": "^5.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-yaml": "^4.1.2",
@@ -59,7 +59,7 @@
     "semantic-release": "^23.0.2",
     "typescript": "^5.4.2",
     "vue": "^3.2.47",
-    "vue-i18n": "^9.2.2"
+    "vue-i18n": "^11.4.14"
   },
   "publishConfig": {
     "access": "public"
@@ -68,5 +68,19 @@
   "dependencies": {
     "@vueuse/core": "^10.11.0",
     "lodash": "^4.17.21"
+  },
+  "pnpm": {
+    "overrides": {
+      "@unhead/vue": "2.1.17",
+      "axios": "1.21.0",
+      "deepmerge": "npm:@shivammathur/deepmerge@4.3.2",
+      "joi": "18.3.1",
+      "js-yaml": "4.3.2",
+      "minimatch@>=7": ">=11.0.1 <12",
+      "nanoid@5": "5.1.16",
+      "vite": "8.3.5",
+      "vue": "^3.5.45",
+      "zod": "4.6.7"
+    }
   }
 }
