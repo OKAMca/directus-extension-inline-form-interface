@@ -2,7 +2,7 @@
   "name": "directus-extension-inline-form-interface",
   "description": "An inline form interface for Directus",
   "icon": "extension",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
