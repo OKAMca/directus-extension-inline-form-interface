@@ -27,7 +27,7 @@
 import { useApi, useStores } from '@directus/extensions-sdk';
 import { computed, ref, toRefs, watch } from 'vue';
 import { useI18n } from '@/composables/use-i18n';
-import { get, isEmpty, isNil } from 'lodash-es';
+import { cloneDeep, get, isEmpty, isEqual, isNil, isPlainObject } from 'lodash-es';
 import { useRelationM2O } from '@/composables/use-relation-m2o.js';
 import { getEndpoint } from '@directus/utils';
 import { unexpectedError } from '@/utils/unexpected-error.js';
@@ -110,6 +110,17 @@ watch(
 		}
 	},
 	{ deep: true, immediate: true },
+);
+
+// watch for edits set by another interface of the parent form (setFieldValue): show them in the
+// inline form. The edits emitted above come back as the same value: no loop.
+watch(
+	() => props.value,
+	(value) => {
+		if (!isPlainObject(value) || isEqual(value, internalEdits.value)) return;
+
+		internalEdits.value = cloneDeep(value as Record<string, any>);
+	},
 );
 
 // watch for a discard (value will be changed back to it's initial key value)
