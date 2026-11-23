@@ -1,3 +1,10 @@
+# 1.3.2 (2026-11-23)
+
+### Security
+
+* Clear all Dependabot and audit alerts: update `@directus/extensions-sdk` to 17.1.4, `@directus/composables` to 11.4.1, `@directus/types` to 15.0.3, `@directus/utils` to 13.4.1 and `vue-i18n` to 11.4.14, and add pnpm overrides for axios, vite, zod, js-yaml, joi, nanoid, minimatch and deepmerge.
+* Move `@vueuse/core` and `lodash` to devDependencies. They are bundled into `dist`, so the Directus image no longer installs them.
+
 # [1.2.0](https://github.com/hanneskuettner/directus-extension-inline-form-interface/compare/v1.1.0...v1.2.0) (2024-03-07)
 
 
